@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: '3a5a94a1-282e-4127-aebf-db77d13105c9'
   
   # Web app name
-  webAppName: 'meuflask'
+  webAppName: 'rrm861'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'meuflask'
+  environmentName: 'rrm861'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -88,7 +88,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : meuflask'
+            displayName: 'Deploy Azure Web App : rrm861'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
